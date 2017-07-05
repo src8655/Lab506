@@ -125,13 +125,7 @@ namespace Leap.Unity {
     public void RemoveHandRepresentation(HandRepresentation handRepresentation) {
       activeHandReps.Remove(handRepresentation);
     }
-        Controller controller = new Controller();          //컨트롤러
-        void Update()
-        {
-            Frame frame = controller.Frame();
-            print("Frame : " + frame.Hands[0] + "0 finger : " + frame.Hands[0].Fingers[0].TipPosition.x + " " + frame.Hands[0].Fingers[0].TipPosition.y + " " + frame.Hands[0].Fingers[0].TipPosition.z + " " + "      palm : " + frame.Hands[0].PalmPosition.x + ":" + frame.Hands[0].PalmPosition.y + ":" + frame.Hands[0].PalmPosition.z);
-
-        }
+       
 
     void Start() {
       if (ModelsParent == null) {
